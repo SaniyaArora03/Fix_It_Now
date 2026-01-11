@@ -64,18 +64,9 @@ Customer → Job Creation → Technician Assignment → Technician Action.
 
 ---
 
-## 🧠 Architecture Highlights
 
-- **Single Users Collection** with role-based behavior
-- **JWT-driven identity** (no frontend user IDs)
-- Backend determines ownership via `req.user.id`
-- Clean separation of:
-  - Routes
-  - Controllers
-  - Models
-  - Middleware
 
----
+
 
 
 
