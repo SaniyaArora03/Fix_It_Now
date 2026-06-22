@@ -1,7 +1,7 @@
 const BASE_URL = "https://fix-it-now-kszo.onrender.com";
 
 export async function login(email, password) {
-  const res = await fetch(`${BASE_URL}/auth/login`, {
+  const res = await fetch(`${BASE_URL}/api/auth/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password })
@@ -11,7 +11,7 @@ export async function login(email, password) {
     throw new Error("Login failed");
   }
 
-  return res.json(); // { token, role }
+  return res.json();
 }
 export async function register(name, email, password, role) {
   const res = await fetch(`${BASE_URL}/api/auth/register`, {
