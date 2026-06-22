@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://fix-it-now-kszo.onrender.com";
 
 export async function login(email, password) {
   const res = await fetch(`${BASE_URL}/auth/login`, {

@@ -1,6 +1,6 @@
 import { getToken } from "../utils/auth";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://fix-it-now-kszo.onrender.com";
 
 export async function createJob(payload) {
   const token = getToken();
