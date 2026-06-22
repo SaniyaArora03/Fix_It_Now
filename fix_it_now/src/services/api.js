@@ -5,7 +5,7 @@ const BASE_URL = "https://fix-it-now-kszo.onrender.com";
 export async function createJob(payload) {
   const token = getToken();
 
-  const res = await fetch(`${BASE_URL}/user/jobs`, {
+  const res = await fetch(`${BASE_URL}/api/user/jobs`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
